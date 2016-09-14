@@ -1,5 +1,13 @@
 #!/bin/bash
 
+if [ -z $1 ]; then
+    echo Build version to run not passed. Exiting
+    exit
+else
+    Test suite version $1 will be build and started
+fi
+
+
 LCHOME="/home/simant/Locationcast"
 
 echo Stopping any running test-suite
